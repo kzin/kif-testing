@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'kif-testing' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for kif-testing
+    target 'kif-testingTests' do
+      inhibit_all_warnings!
+      inherit! :search_paths
+      pod 'FBSnapshotTestCase'
+      pod 'Quick', '~> 1.0.0'
+      pod 'Nimble', '~> 5.1.1'
+      pod 'Nimble-Snapshots'
+      pod 'KIF'
+      pod 'KIF-Quick'
+    end
+
+end
